@@ -3,13 +3,16 @@ import '../styles/App.css';
 import ChildComponent from './ChildComponent';
 const App = () => {
  //code here
-
+ const [value, setValue] = useState(0);
+ const onChangeHandler = (e) => {
+   setValue(e.target.value);
+ };
   return (
     <div id="main">
       <ChildComponent /> 
-       <input id='input' onChange={} />
-    
-      <p id='output'>{}</p>
+      <input id="input" onChange={onChangeHandler} />
+
+<p id="output">{Math.sqrt(value)}</p>
     </div>
   )
 }
