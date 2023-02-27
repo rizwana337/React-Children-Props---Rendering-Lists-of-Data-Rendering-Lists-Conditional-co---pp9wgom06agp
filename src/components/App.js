@@ -7,7 +7,10 @@ const App = () => {
   return (
     <div id="main">
       <ChildComponent /> 
-      
+       
+      <input id="input" onChange={onChangeHandler} />
+
+      <p id="output">{Math.sqrt(value)}</p>
     </div>
   )
 }

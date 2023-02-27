@@ -9,9 +9,7 @@ const ChildComponent = () => {
   return (
     <div id="child">
       Find The Square <br/>
-      <input id="input" onChange={onChangeHandler} />
-
-<p id="output">{Math.sqrt(value)}</p>
+      
     </div>
     
   )
