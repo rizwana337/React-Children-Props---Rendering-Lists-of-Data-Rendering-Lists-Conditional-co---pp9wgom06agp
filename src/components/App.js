@@ -3,17 +3,17 @@ import '../styles/App.css';
 import ChildComponent from './ChildComponent';
 const App = () => {
  //code here
- const [value, setValue] = useState('');
-  const onChangeHandler = (prop) => {
-    setValue(prop.target.value);
+ const [state, setState] = useState('');
+  const inputValue = (prop) => {
+    setState(prop.target.value);
   }
   return (
     <div id="main">
       <ChildComponent > 
        
-      <input id="input" onChange={onChangeHandler} />
+      <input id="input" onChange={inputValue} />
 </ChildComponent>
-      <p id="output">{Number(value)*Number(value)}</p>
+      <p id="output">{Number(state)*Number(state)}</p>
     </div>
   )
 }
