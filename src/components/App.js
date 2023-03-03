@@ -2,10 +2,9 @@ import React , {useState,useEffect} from 'react'
 import '../styles/App.css';
 import ChildComponent from './ChildComponent';
 const App = () => {
- //code here
- const [state, setState] = useState('');
+ const [state, setstate] = useState('');
   const inputValue = (prop) => {
-    setState(prop.target.value);
+    setstate(prop.target.value);
   }
   return (
     <div id="main">
